@@ -22,7 +22,19 @@ Po włączeniu funkcji eksportu do BigQuery może minąć kilka godzin, zanim za
 1. Przechowywanie danych
 2. Utwórz zasobnik
 3. Zalecany wybór lokalizacji regionalnej europe-west3
-4. Wybór klasy pamięci masowej. Zalacana klasa: Standard
-5. Wybór sposobu kontrolowania dostępu do obiektów. Zalecana "szczegółowa" kontrola dostępu. 
+4. Wybór klasy pamięci masowej. Zalacana klasa "Standard"
+5. Wybór sposobu kontrolowania dostępu do obiektów. Zalecana "szczegółowa" kontrola dostępu
+6. Utwórz
+
+Teraz kiedy mam utworzony zasobnik mogę przejść do eksportu danych rozliczeniowych.
+
+1. Płatności 
+2. Wybieram konto rozliczeniowe
+3. Eksport rozliczeń
+4. Wybieram zakładkę "Eksport pliku"
+5. Edytuj ustawienia
+6. W polu "Nazwa zasobnika" podaję nazwę zasobnika utworzonego w poprzednich krokach. 
+
+
 
 
