@@ -37,7 +37,8 @@ Teraz kiedy mam utworzony zasobnik mogę przejść do eksportu danych rozliczeni
 
 Eksport plików do CSV i JSON przechwytuje mniejszy zbiór danych niż eksport do BigQuery.
 
-#Utworzenie i uruchomienie własnej instancji:
+# Utworzenie i uruchomienie własnej instancji:
+
 1. Compute Engine
 2. Instancje maszyn wirtualnych (za pierwszym razem platforma nicjalizuje API Google Compute Engine
 3. Utwórz
