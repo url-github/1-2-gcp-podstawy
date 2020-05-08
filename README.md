@@ -35,6 +35,8 @@ Teraz kiedy mam utworzony zasobnik mogę przejść do eksportu danych rozliczeni
 5. Edytuj ustawienia
 6. W polu "Nazwa zasobnika" podaję nazwę zasobnika utworzonego w poprzednich krokach. 
 
+Eksport plików do CSV i JSON przechwytuje mniejszy zbiór danych niż eksport do BigQuery.
+
 
 
 
