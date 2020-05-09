@@ -43,7 +43,8 @@ Eksport plików do CSV i JSON przechwytuje mniejszy zbiór danych niż eksport d
 2. Instancje maszyn wirtualnych (za pierwszym razem platforma nicjalizuje API Google Compute Engine
 3. Utwórz
 4. Wskazanie regionu i strefy
-5. Wybór rodzaju maszyny
+5. Wybór rodzaju maszyny np. seria N1
+6. Utwórz
 
 
 
