@@ -65,6 +65,18 @@ Migawki mogą być przechowywane w lokalizacji wieloregionalnej Cloud Storage, t
 
 https://cloud.google.com/compute/docs/disks/create-snapshots
 
+1. Compute Engine.
+2. Zrzuty dysku.
+3. Utwórz zrzót.
+4. Wybieram dysk źródłowy z wcześniej utworzonej instancji maszyny wirtualnej. 
+5. Wybór lokalizacji: wiele regionów, region.
+6. Utwórz.
+
+Tworzenie harmonogramu tworzenia migawek: https://cloud.google.com/compute/docs/disks/scheduled-snapshots
+
+
+
+
 
 
 
