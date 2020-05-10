@@ -74,6 +74,19 @@ https://cloud.google.com/compute/docs/disks/create-snapshots
 
 Tworzenie harmonogramu tworzenia migawek: https://cloud.google.com/compute/docs/disks/scheduled-snapshots
 
+# Przenoszenie instancji pomiędzy strefami
+
+Najlepiej przenosić instancję automatycznie za pomocą moveInstance API jak poniżej. Jeśli nie jest to możliwe poprzez API należy wykonać to ręcznie. 
+
+1. Compute Engine.
+2. Uruchamiam Cloud Shell.
+3. Komenda: 
+# gcloud compute instances move gclab3 --zone europe-west3-a --destination-zone europe-west3-b 
+lub
+# gcloud compute instances move instance-1 --zone us-central1-b --destination-zone us-entral1-f
+4. Po zakończonym procesie mam komunikat: "Moving gce instance instance_name…done"
+
+
 
 
 
