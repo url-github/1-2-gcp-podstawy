@@ -81,10 +81,20 @@ Najlepiej przenosić instancję automatycznie za pomocą moveInstance API jak po
 1. Compute Engine.
 2. Uruchamiam Cloud Shell.
 3. Komenda: 
-# gcloud compute instances move gclab3 --zone europe-west3-a --destination-zone europe-west3-b 
+> gcloud compute instances move gclab3 --zone europe-west3-a --destination-zone europe-west3-b 
 lub
-# gcloud compute instances move instance-1 --zone us-central1-b --destination-zone us-entral1-f
+> gcloud compute instances move instance-1 --zone us-central1-b --destination-zone us-entral1-f
 4. Po zakończonym procesie mam komunikat: "Moving gce instance instance_name…done"
+
+# Przenoszenie instancji pomiędzy regionami (za pomocą Cloud Shell)
+
+1. Sprawdzam jakie posiadam migawki dysku: 
+> gcloud compute snapshots list
+2. Tworzę dysk z wcześniej utworzonej migawki w nowym regionie:
+> gcloud compute disks create gclab3-new --source-snapshot migawka-05-12-19
+3. Po poprawnym wykonaniu komendy automatycznie wyświetli się lista dostępnych regionów, w których mogę utworzyć dysk, ponieważ nie zdefiniowaliśmy tej własności w naszej komendzie za pomocą odpowiedniego przełącznika.
+4. Kiedy posiadam dysk w odpowiednim regionie i strefie tworzę instancję z dyskiem.
+
 
 
 
