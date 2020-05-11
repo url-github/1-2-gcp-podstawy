@@ -92,8 +92,11 @@ lub
 > gcloud compute snapshots list
 2. Tworzę dysk z wcześniej utworzonej migawki w nowym regionie:
 > gcloud compute disks create gclab3-new --source-snapshot migawka-05-12-19
-3. Po poprawnym wykonaniu komendy automatycznie wyświetli się lista dostępnych regionów, w których mogę utworzyć dysk, ponieważ nie zdefiniowaliśmy tej własności w naszej komendzie za pomocą odpowiedniego przełącznika.
-4. Kiedy posiadam dysk w odpowiednim regionie i strefie tworzę instancję z dyskiem.
+3. Po poprawnym wykonaniu komendy automatycznie wyświetli się lista dostępnych regionów, w których mogę utworzyć dysk, ponieważ nie zdefiniowaliśmy tej własności w naszej komendzie za pomocą odpowiedniego przełącznika. Wybieram inny region / strefę np. asia-northeast1-a.
+4. Kiedy posiadam dysk w odpowiednim regionie i strefie tworzę instancję z dyskiem
+> gcloud compute instances create <instance_name> --machine-type f1-micro --disk name=<disk_name>,boot=yes,mode=rw
+5. Did you mean zone [region] for instance: (Y/n)? n
+6. Ponownie automatycznie wyświetli się lista dostępnych regionów oraz stref. Wskazuję na ten sam region, w którym utworzyłem wcześniej dysk (inaczej konsola zwróci błąd o niedostępności). Wskazuję na region oraz strefę asia-northeast1-a ponownie wpisując odpowiadający tej lokalizacji numer.
 
 
 
