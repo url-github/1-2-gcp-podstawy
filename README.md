@@ -105,13 +105,19 @@ lub
 3. Zapora sieciowa - zezwalaj na ruch HTTP. Pozwoli to zweryfikować poprawność działania skryptu. 
 4. Rozwijam listę "Zarządzanie...".
 5. W polu skrypt startowy wklejam kod. Jest to polecenie, które instaluje serwer Apache oraz modyfikuje stronę startową.
-> #! /bin/bash
-> apt-get update
-> apt-get install -y apache2
-> cat <<EOF > /var/www/html/index.html
-> <html><body><h1>Hello World</h1>
-> <p>This page was created from a simple startup script!</p>
-> </body></html>
+#! /bin/bash
+apt-get update
+apt-get install -y apache2
+cat <<EOF > /var/www/html/index.html
+<html><body><h1>Hello World</h1>
+<p>This page was created from a simple startup script!</p>
+</body></html>
+6. Utwórz.
+7. Obok nazwy maszyny, w kolumnie External IP znajduje się przypisany zewnętrzny adres IP dla maszyny. Klikając w podany adres przekieruje do nowej strony w przeglądarce.
+  
+
+
+
 
 
 
