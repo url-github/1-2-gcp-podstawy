@@ -98,6 +98,24 @@ lub
 5. Did you mean zone [region] for instance: (Y/n)? n
 6. Ponownie automatycznie wyświetli się lista dostępnych regionów oraz stref. Wskazuję na ten sam region, w którym utworzyłem wcześniej dysk (inaczej konsola zwróci błąd o niedostępności). Wskazuję na region oraz strefę asia-northeast1-a ponownie wpisując odpowiadający tej lokalizacji numer.
 
+# Uruchomienie skryptów startowych
+
+1. Compute Engine.
+2. Instancje maszyn wirtualnych.
+3. Zapora sieciowa - zezwalaj na ruch HTTP. Pozwoli to zweryfikować poprawność działania skryptu. 
+4. Rozwijam listę "Zarządzanie...".
+5. W polu skrypt startowy wklejam kod. Jest to polecenie, które instaluje serwer Apache oraz modyfikuje stronę startową.
+> #! /bin/bash
+> apt-get update
+> apt-get install -y apache2
+> cat <<EOF > /var/www/html/index.html
+> <html><body><h1>Hello World</h1>
+> <p>This page was created from a simple startup script!</p>
+> </body></html>
+
+
+
+
 
 
 
