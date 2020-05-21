@@ -1,3 +1,8 @@
+
+( notatki z Chmurowisko )
+
+---
+
 # Instalacja SDK
 
 https://cloud.google.com/sdk 
