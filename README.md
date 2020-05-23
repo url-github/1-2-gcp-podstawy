@@ -121,7 +121,7 @@ lub
 7. Obok nazwy maszyny, w kolumnie External IP znajduje się przypisany zewnętrzny adres IP dla maszyny. Klikając w podany adres przekieruje do nowej strony w przeglądarce.
       
       
-#### Zadanie 2.
+# Zadanie 2.
 
 Załóżmy, że mamy zdefiniowane takie grupy użytkowników:
 
