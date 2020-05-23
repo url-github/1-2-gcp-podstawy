@@ -119,6 +119,71 @@ lub
       </body></html>
 6. Utwórz.
 7. Obok nazwy maszyny, w kolumnie External IP znajduje się przypisany zewnętrzny adres IP dla maszyny. Klikając w podany adres przekieruje do nowej strony w przeglądarce.
+      
+      
+#### Zadanie 2.
+
+Załóżmy, że mamy zdefiniowane takie grupy użytkowników:
+
+- Developers
+- Testers
+- QAs
+- DevOps
+- Wymagania
+
+Aplikacja (gra) potrzebuje środowisk: 
+
+a. Developerskie 
+b. Testowe 
+c. QA 
+d. Produkcyjne
+
+Developerzy i testerzy mają dostęp do tych samych środowisk, odizolowanych od produkcji na stage i produkcje, dostęp będzie miał tylko zespół QA i devopsów.
+
+#### Propozycja rozwiązania:
+
+Odzwierciedlenie strukturu organizacji w hierarchi GCP:
+- Least privilege principle ( Zasada najmniejszego uprzywilejowania )
+- Hierarchia zasobów.
+
+
+
+
+                                   +----------------+
+                                   |  Organizacja   |
+                                   |                |
+                    +--------------+------------+---+------------------+
+                    |                           |                      |
+                    |                           |                      |
+            +-------+-------+            +------+-------+       +------+--------+
+            | Development   |            | Stage        |       | Produkcja     |
+            |               |            |              |       |               |
+            +-------+-------+            +----------+---+       +---------------+
+                    |                               |                           |
+                    |                               |                           |
+            +-------+-------+                  +----+-------+              +----+-------+
+            | App1          |                  | App1       |              | App1       |
+       +----+               +----+             |            |              |            |
+       |    +---------------+    |             +------+-----+              +------+-----+
+       |                         |                    |                           |
++------+------+         +--------+-----+             ++-------------+            ++-------------+
+|  DEV        |         |  TEST        |             | QA-v1.1      |            |    v1.0      |
+|             |         |              |             |              |            |              |
++-------------+         +--------------+             +--------------+            +--------------+
+
+
+#### Dostępy:
+
+- DevOps - pełny dostęp na poziomie Organizacji
+- Developerzy i Testerzy - dostęp na poziomie Development
+- QA - dostęp do Stage
+- QA - może otrzymać czasowy dostęp do konkretnej aplikacji produkycjnej (nadawane i zdejmowane przez DevOps)
+
+#### Polityki:
+
+Development ma założone constraint-y na:
+- obrazy VM-ek, które są zaakceptowane przez Org i mają wgrane potrzebne narzędzia ... itp
+- rodzaj maszyn - by optymalizować koszty
   
 
 
