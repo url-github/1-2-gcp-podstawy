@@ -129,9 +129,8 @@ Załóżmy, że mamy zdefiniowane takie grupy użytkowników:
 - Testers
 - QAs
 - DevOps
-- Wymagania
 
-Aplikacja (gra) potrzebuje środowisk: 
+#### Wymagania: Aplikacja (Gra) potrzebuje środowisk: 
 
 a. Developerskie 
 b. Testowe 
@@ -148,7 +147,7 @@ Odzwierciedlenie strukturu organizacji w hierarchi GCP:
 
 
 
-----
+
 
                                    +----------------+
                                    |  Organizacja   |
