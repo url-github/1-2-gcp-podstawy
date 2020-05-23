@@ -148,6 +148,7 @@ Odzwierciedlenie strukturu organizacji w hierarchi GCP:
 
 
 
+----
 
                                    +----------------+
                                    |  Organizacja   |
@@ -171,6 +172,9 @@ Odzwierciedlenie strukturu organizacji w hierarchi GCP:
 |             |         |              |             |              |            |              |
 +-------------+         +--------------+             +--------------+            +--------------+
 
+
+
+----
 
 #### Dostępy:
 
